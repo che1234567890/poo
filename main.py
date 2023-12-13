@@ -67,6 +67,7 @@ class Hero:
         else:
             print(self.name, "est vivant")
 
+Hero = Hero() 
 print(Hero.attaque())
 Hero.dommage(1)
 Hero.est_vivant()
