@@ -21,7 +21,7 @@ class Rectangle:
         self.air = self.largeur * self.longeur
 
     def afficher_infos(self):
-        print(self.air)
+        print("l'aire du rectangle est ", self.air)
 
 rectangle = Rectangle(10, 12)
 rectangle.calcul_air()
@@ -62,12 +62,11 @@ class Hero:
 
     def est_vivant(self):
         if self.hp <= 0:
-            print(self.name, "est mort")
-            exit()
+            False
         else:
-            print(self.name, "est vivant")
+            True
 
-Hero = Hero() 
+Hero = Hero()
 print(Hero.attaque())
 Hero.dommage(1)
 Hero.est_vivant()
