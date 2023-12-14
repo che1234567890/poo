@@ -47,11 +47,11 @@ cercle.calcul_circonference()
 from random import randint
 
 class Hero:
-    def __init__(self):
+    def __init__(self, link):
         self.hp = randint(2,10)
         self.ap = randint(1,6)
         self.df = randint(1,6)
-        self.name = 'link'
+        self.name = link
 
     def attaque(self):
         attaque = randint(1,6) + self.ap
@@ -66,7 +66,7 @@ class Hero:
         else:
             True
 
-Hero = Hero()
+Hero = Hero("link")
 print(Hero.attaque())
 Hero.dommage(1)
 Hero.est_vivant()
